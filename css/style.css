@@ -15,37 +15,172 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 */
 
 /* VARIÁVEIS */
-:root{
-  
+:root {
+	
+}
+
+.container {
+  max-width: 935px;
+  display: flex;
+  margin: 0 auto;
 }
 
 /*BODY*/
-body{
-
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  color: #262626;
 }
 
 /*TOPO*/
-header{
-	
+header {
 }
 
 /*RODAPÉ*/
-footer{
+footer {
+  text-align: center;
+}
 
+footer nav a {
+  text-decoration: none;
 }
 
 /*PÁGINA INICIAL*/
-main{
-	
+main {
 }
-	main .profile-content{
+main .profile-content {
+  text-align: center;
+}
 
-	}
+main .profile-content section figure img {
+  border-radius: 100%;
+}
 
-	main .highlighted-stories{
+main .profile-content section div p {
+  display: inline;
+}
+main .profile-content section ul {
+  padding: 0;
+}
 
-	}
+main .profile-content section ul li {
+  list-style: none;
+}
 
-	main .profile-posts{
+.profile-data span {
+  font-weight: bold;
+}
 
-	}
+main .highlighted-stories {
+}
+
+main .highlighted-stories ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  padding: 0;
+}
+
+main .highlighted-stories ul li figure img {
+  max-width: 77px;
+  max-height: 77px;
+  border-radius: 100%;
+  border: 1px solid black;
+}
+
+main .highlighted-stories ul li figure figcaption {
+  text-align: center;
+}
+
+main .profile-posts {
+}
+
+main .profile-posts nav ul {
+  justify-content: space-between;
+  padding: 0;
+}
+
+main .profile-posts ul {
+  padding: 0;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+main .profile-posts ul li {
+  list-style: none;
+}
+
+main .profile-posts ul li a figure img {
+  max-height: 293px;
+  max-width: 293px;
+}
+
+main .profile-posts nav {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  margin: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgb(170, 170, 170);
+}
+
+main .profile-posts nav a {
+  text-decoration: none;
+  color: gray;
+  font-weight: bold;
+}
+
+main .profile-posts nav a:hover {
+  color: blue;
+  padding-top: 10px;
+  border-top: 3px solid blue;
+}
+
+@media screen and (min-width: 900px) {
+  .profile-content {
+    display: flex;
+    align-items: center;
+    margin: 1rem 4rem;
+  }
+
+  .profile-info {
+    text-align: left;
+    margin-left: 3rem;
+    position: relative;
+  }
+
+  .profile-info h1 {
+    font-size: 35px;
+    margin-bottom: 0;
+  }
+
+  .profile-data {
+    position: absolute;
+    top: 17rem;
+  }
+
+  .profile-data p {
+    margin-right: 3rem;
+  }
+
+  .profile-info ul {
+    padding: 0;
+  }
+
+  main article.highlighted-stories ul {
+    justify-content: left;
+    margin-top: 4rem;
+  }
+
+  .profile-posts ul {
+    display: block;
+    columns: 3;
+  }
+
+  .profile-posts nav {
+    display: block;
+    text-align: center;
+  }
+  .profile-posts nav a {
+    margin: 0 30px;
+  }
+}
